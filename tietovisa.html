@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fi">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+		
+		<title>Spyro-fanit ry</title>
+		<link rel="stylesheet" href="./Tyylit/Tyylit12A.css">
+		<script src="./JavaScript/spyroquiz.js"></script>
+	</head>
+	<body id="grad">
+		
+		<!-- Logo -->
+		<header class="headeri">
+        </header>
+		
+		<!-- Navigaatio -->
+		<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yhdistys.html">Mikä Spyro-fanit?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="uutiset.html">Ajankohtaista</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hahmot</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="spyro1.html">Spyro the Dragon</a></li>
+            <li><a class="dropdown-item" href="spyro2.html">Spyro 2: Ripto's Rage</a></li>
+            <li><a class="dropdown-item" href="spyro3.html">Spyro: Year of the Dragon</a></li>
+          </ul>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="tietovisa.html">Tietovisa</a>
+		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="videot.html">Videot</a>
+		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="oheistuotteet.html">Oheistuotteet</a>
+		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="liity.html">Liity Spyro-faneihin</a>
+		</li>
+		<li class="nav-item">
+          <a class="nav-link" href="yhteystiedot.html">Yhteystiedot</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+		<!-- Otsikko ja sisältö -->
+		<div class="container">
+		<br>
+		<h1>Spyro tietovisa</h1>
+		<br>
+		<p>Kuinka hyvin tiedätkään ensimmäiset kolme Spyro peliä? Aika selvittää asia tämän tietovisan avulla! Joihinkin kysymyksiin vastaus löytyy tältä sivulta, joihinkin ei. Suosittelemme kuitenkin yrittämään ensin itse, ennen kuin lähdet etsimään vastauksia. Tietovisa on englanniksi.</p>
+		
+		<!-- Tietovisa, 20 kuvaa, 20 kysymystä, joissa jokaisessa 4 vastausvaihtoehtoa, ja vastausten lähetys -->
+		<form id="spyrothequiz" name="spyrothequiz">
+		<br><br><img src="Kuvat/blackspyro.PNG" alt="blackspyro" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 1/20: What color is Spyro? Here's a hint: He's not black.</p>
+		<input type="radio" id="vaihtoehto1a" name="k1" value="orange"> Orange<br>
+		<input type="radio" id="vaihtoehto1b" name="k1" value="green"> Green<br>
+		<input type="radio" id="vaihtoehto1c" name="k1" value="purple"> Purple<br>
+		<input type="radio" id="vaihtoehto1d" name="k1" value="white"> White<br>
+		
+		<br><br><img src="Kuvat/sparx.PNG" alt="sparx" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 2/20: What kind of insect is Sparx?</p>
+		<input type="radio" id="vaihtoehto2a" name="k2" value="firefly"> Firefly<br>
+		<input type="radio" id="vaihtoehto2b" name="k2" value="dragonfly"> Dragonfly<br>
+		<input type="radio" id="vaihtoehto2c" name="k2" value="butterfly"> Butterfly<br>
+		<input type="radio" id="vaihtoehto2d" name="k2" value="mosquito"> Mosquito<br>
+		
+		<br><br><img src="Kuvat/bluesparx.PNG" alt="bluesparx" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 3/20: Refer to the image. How much hits Sparx can take before Spyro is on his own?</p>
+		<input type="radio" id="vaihtoehto3a" name="k3" value="one"> One<br>
+		<input type="radio" id="vaihtoehto3b" name="k3" value="two"> Two<br>
+		<input type="radio" id="vaihtoehto3c" name="k3" value="three"> Three<br>
+		<input type="radio" id="vaihtoehto3d" name="k3" value="four"> Four<br>
+		
+		<br><br><img src="Kuvat/gems.PNG" alt="gems" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 4/20: How much is this type of gem worth?</p>
+		<input type="radio" id="vaihtoehto4a" name="k4" value="ten"> 10<br>
+		<input type="radio" id="vaihtoehto4b" name="k4" value="fifteen"> 15<br>
+		<input type="radio" id="vaihtoehto4c" name="k4" value="twenty"> 20<br>
+		<input type="radio" id="vaihtoehto4d" name="k4" value="twentyfive"> 25<br>
+		
+		<br><br><img src="Kuvat/spyroinctr.PNG" alt="spyroinctr" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 5/20: Spyro is a playable character in Crash Team Racing: Nitro-Fueled, along with two other characters from the Spyro games. Who are they?</p>
+		<input type="radio" id="vaihtoehto5a" name="k5" value="huntergnasty"> Hunter & Gnasty Gnorc<br>
+		<input type="radio" id="vaihtoehto5b" name="k5" value="biancasorceress"> Bianca & Sorceress<br>
+		<input type="radio" id="vaihtoehto5c" name="k5" value="agent9bentley"> Agent 9 & Bentley<br>
+		<input type="radio" id="vaihtoehto5d" name="k5" value="riptomoneybags"> Ripto & Moneybags<br>
+		
+		<br><br><img src="Kuvat/gnastywatchingtv.PNG" alt="interview" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 6/20: In the opening cutscene of Spyro the Dragon, the dragons are being interviewed about life in the Dragon Realms and Gnasty Gnorc. How does Lindar describe Gnasty Gnorc?</p>
+		<input type="radio" id="vaihtoehto6a" name="k6" value="vastaus1"> Lindar says that he's a delightful fellow, the dragons are best friends with him forever.<br>
+		<input type="radio" id="vaihtoehto6b" name="k6" value="vastaus2"> Lindar says that he's a simple, ugly creature, who is no threat to the dragon kingdom.<br>
+		<input type="radio" id="vaihtoehto6c" name="k6" value="vastaus3"> Lindar says that he's okay, I guess.<br>
+		<input type="radio" id="vaihtoehto6d" name="k6" value="vastaus4"> Lindar says that he's a real comedian sometimes.<br>
+		
+		<br><br><img src="Kuvat/bubba.PNG" alt="somedragon" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 7/20: Name this dragon.</p>
+		<input type="radio" id="vaihtoehto7a" name="k7" value="titan"> Titan<br>
+		<input type="radio" id="vaihtoehto7b" name="k7" value="cleetus"> Cleetus<br>
+		<input type="radio" id="vaihtoehto7c" name="k7" value="mazi"> Mazi<br>
+		<input type="radio" id="vaihtoehto7d" name="k7" value="bubba"> Bubba<br>
+		
+		<br><br><img src="Kuvat/drshemp.PNG" alt="boss" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 8/20: Name this boss.</p>
+		<input type="radio" id="vaihtoehto8a" name="k8" value="toasty"> Toasty<br>
+		<input type="radio" id="vaihtoehto8b" name="k8" value="papupapu"> Papu Papu<br>
+		<input type="radio" id="vaihtoehto8c" name="k8" value="drshemp"> Dr. Shemp<br>
+		<input type="radio" id="vaihtoehto8d" name="k8" value="scorch"> Scorch<br>
+		
+		<br><br><img src="Kuvat/boldar.PNG" alt="boldar" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 9/20: What is Spyro's answer to Boldar, one of the dragons in the Magic Crafters world, when he talks to Spyro about the flight levels?</p>
+		<input type="radio" id="vaihtoehto9a" name="k9" value="socool"> Oh that's so cool, let me at it!<br>
+		<input type="radio" id="vaihtoehto9b" name="k9" value="blah"> Blah, blah, blah. Sorry, I have no time to listen to your stories.<br>
+		<input type="radio" id="vaihtoehto9c" name="k9" value="lmaikwtd"> Leave me alone, I know what to do.<br>
+		<input type="radio" id="vaihtoehto9d" name="k9" value="ltfgi"> Learn to fly, got it.<br>
+		
+		<br><br><img src="Kuvat/spyro1level.PNG" alt="spyro1level" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 10/20: Name this level.</p>
+		<input type="radio" id="vaihtoehto10a" name="k10" value="mysticmarsh"> Mystic Marsh<br>
+		<input type="radio" id="vaihtoehto10b" name="k10" value="boggyswamp"> Boggy Swamp<br>
+		<input type="radio" id="vaihtoehto10c" name="k10" value="mistybog"> Misty Bog<br>
+		<input type="radio" id="vaihtoehto10d" name="k10" value="toadvillage"> Toad Village<br>
+		
+		<br><br><img src="Kuvat/vacation.PNG" alt="vacation" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 11/20: Where does Spyro want to go for vacation?</p>
+		<input type="radio" id="vaihtoehto11a" name="k11" value="sunnybeach"> Sunny Beach<br>
+		<input type="radio" id="vaihtoehto11b" name="k11" value="seashellshores"> Seashell Shores<br>
+		<input type="radio" id="vaihtoehto11c" name="k11" value="dragonvillage"> Dragon Village<br>
+		<input type="radio" id="vaihtoehto11d" name="k11" value="dragonshores"> Dragon Shores<br>
+		
+		<br><br><img src="Kuvat/henchmen.PNG" alt="henchmen" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 12/20: Name Ripto's henchmen.</p>
+		<input type="radio" id="vaihtoehto12a" name="k12" value="slicedice"> Slice & Dice<br>
+		<input type="radio" id="vaihtoehto12b" name="k12" value="crushgulp"> Crush & Gulp<br>
+		<input type="radio" id="vaihtoehto12c" name="k12" value="barkbite"> Bark & Bite<br>
+		<input type="radio" id="vaihtoehto12d" name="k12" value="slashmush"> Slash & Mush<br>
+		
+		<br><br><img src="Kuvat/trouble.PNG" alt="troublewiththepictureeh" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 13/20: Complete the following sentence: "Trouble with the..."</p>
+		<input type="radio" id="vaihtoehto13a" name="k13" value="trolley"> ...trolley, eh?<br>
+		<input type="radio" id="vaihtoehto13b" name="k13" value="cart"> ...cart, eh?<br>
+		<input type="radio" id="vaihtoehto13c" name="k13" value="thingamajig"> ...thingamajig, eh?<br>
+		<input type="radio" id="vaihtoehto13d" name="k13" value="landblobbers"> ...landblobbers, eh?<br>
+		
+		<br><br><img src="Kuvat/duo.PNG" alt="kids" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 14/20: Name this duo.</p>
+		<input type="radio" id="vaihtoehto14a" name="k14" value="megchris"> Chris & Meg<br>
+		<input type="radio" id="vaihtoehto14b" name="k14" value="bartlisa"> Bart & Lisa<br>
+		<input type="radio" id="vaihtoehto14c" name="k14" value="handelgreta"> Handel & Greta<br>
+		<input type="radio" id="vaihtoehto14d" name="k14" value="hankgabby"> Hank & Gabby<br>
+		
+		<br><br><img src="Kuvat/powerup.PNG" alt="powerup" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 15/20: What is the only level in Spyro 2 to feature superfly and superflame in the same powerup?</p>
+		<input type="radio" id="vaihtoehto15a" name="k15" value="aquariatowers"> Aquaria Towers<br>
+		<input type="radio" id="vaihtoehto15b" name="k15" value="zephyr"> Zephyr<br>
+		<input type="radio" id="vaihtoehto15c" name="k15" value="sunnybeach"> Sunny Beach<br>
+		<input type="radio" id="vaihtoehto15d" name="k15" value="metropolis"> Metropolis<br>
+		
+		<br><br><img src="Kuvat/sheila.PNG" alt="sheila" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 16/20: Name this kangaroo friend of Spyro.</p>
+		<input type="radio" id="vaihtoehto16a" name="k16" value="agnes"> Agnes<br>
+		<input type="radio" id="vaihtoehto16b" name="k16" value="sheila"> Sheila<br>
+		<input type="radio" id="vaihtoehto16c" name="k16" value="kao"> Kao<br>
+		<input type="radio" id="vaihtoehto16d" name="k16" value="splodge"> Splodge<br>
+		
+		<br><br><img src="Kuvat/sheriffwyatt.PNG" alt="sheriffwyatt" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 17/20: Name this character.</p>
+		<input type="radio" id="vaihtoehto17a" name="k17" value="deputybailey"> Deputy Bailey<br>
+		<input type="radio" id="vaihtoehto17b" name="k17" value="deputyroy"> Deputy Roy<br>
+		<input type="radio" id="vaihtoehto17c" name="k17" value="sheriffholiday"> Sheriff Holiday<br>
+		<input type="radio" id="vaihtoehto17d" name="k17" value="sheriffwyatt"> Sheriff Wyatt<br>
+		
+		<br><br><img src="Kuvat/bentley.PNG" alt="bentley" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 18/20: How much gems does it cost to free Bentley the Yeti?</p>
+		<input type="radio" id="vaihtoehto18a" name="k18" value="700g"> 700<br>
+		<input type="radio" id="vaihtoehto18b" name="k18" value="500g"> 500<br>
+		<input type="radio" id="vaihtoehto18c" name="k18" value="1000g"> 1000<br>
+		<input type="radio" id="vaihtoehto18d" name="k18" value="1200g"> 1200<br>
+		
+		<br><br><img src="Kuvat/spyro3level.PNG" alt="spyro3level" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 19/20: Name this level.</p>
+		<input type="radio" id="vaihtoehto19a" name="k19" value="twilightharbor"> Twilight Harbor<br>
+		<input type="radio" id="vaihtoehto19b" name="k19" value="breezeharbor"> Breeze Harbor<br>
+		<input type="radio" id="vaihtoehto19c" name="k19" value="lostfleet"> Lost Fleet<br>
+		<input type="radio" id="vaihtoehto19d" name="k19" value="gnorccove"> Gnorc Cove<br>
+		
+		<br><br><img src="Kuvat/babydragon.PNG" alt="babydragon" height="250" width="500">
+		<br><br><p style="text-align: left;">Question 20/20: Name this baby dragon.</p>
+		<input type="radio" id="vaihtoehto20a" name="k20" value="dan"> Dan<br>
+		<input type="radio" id="vaihtoehto20b" name="k20" value="andy"> Andy<br>
+		<input type="radio" id="vaihtoehto20c" name="k20" value="romey"> Romey<br>
+		<input type="radio" id="vaihtoehto20d" name="k20" value="sam"> Sam<br><br>
+		
+		<input id="button" type="button" value="Submit your answers" onclick="tarkista();">
+		</form>
+		
+		<div id="submitin_jalkeen">
+		<p id="oikeidenvastaustenmaara">
+		</div>
+		</div>
+
+		<footer>&#169; Spyro-fanit ry 2022</footer>
+	</body>
+</html>
